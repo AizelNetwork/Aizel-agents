@@ -1,0 +1,10 @@
+[package]
+name = "aizel-agents"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = "1.0.215"
+serde_json = "1.0.133"
+tokio = { version = "1.41.1", features = ["full"] }
+twitter-v2 = "0.1.8"
