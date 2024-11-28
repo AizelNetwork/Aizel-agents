@@ -1,7 +1,8 @@
 pub mod twitters;
-
+use serde::Deserialize;
 use std::{error::Error, str::FromStr};
 
+#[derive(Deserialize, Debug)]
 pub enum Action {
     Unknown,
     PostTweets,

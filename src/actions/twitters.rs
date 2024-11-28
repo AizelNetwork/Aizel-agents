@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use std::str::FromStr;
 use twitter_v2::{authorization::Oauth1aToken, TwitterApi};
 
-#[derive(Serialize, Deserialize, Clone)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct TwitterAuth {
     #[serde(rename = "ConsumerKey")]
     pub consumer_key: String,
